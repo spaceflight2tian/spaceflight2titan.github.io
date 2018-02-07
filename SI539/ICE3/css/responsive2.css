@@ -1,6 +1,26 @@
 @media only screen and (min-width: 680px) {
   .top-nav ul li{
     display: inline-block;
-    float: center;
+  }
+
+/* 1 medium screen grid blocks */
+  .item3, .item4{
+  	display: inline-block;
+  	width: 45%; margin: 0 2%;
+  }
+/* 2 large screen grid blocks */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+
+  }
+  .item1, .item2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+/* 3 big screen navigation horizongtally centered */
+  .top-nav ul li a {
+    line-height: 40px;
   }
 }
