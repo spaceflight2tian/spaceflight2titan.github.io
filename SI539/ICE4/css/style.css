@@ -89,6 +89,7 @@ header{
 	margin: 0;
 	display: block;
 }
+
 .top-nav ul li, .menu-icon{
 	border-top: 1px solid #DDDDDA; /*CHANGE*/
 }
@@ -131,6 +132,15 @@ header{
   	position: relative;
   	top: 1px;
 }
+
+
+/* @media screen and (min-width: 650px) {
+  .top-nav ul {
+    display: inline-block;
+		width: 300px;
+  }
+} */
+
 /*implement menu toogle*/
 .top-nav.toggle-open ul{
 	display: block;
