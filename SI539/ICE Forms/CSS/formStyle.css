@@ -24,6 +24,17 @@ form{
 	border: 1px solid #6b6b6b;
 }
 
+fieldset {
+	background: #cdd4be;
+	border-color: #fffccc;
+
+}
+
+
+legend {
+	font-weight: bold;
+}
+
 #title{
 	text-align: center;
 }
@@ -32,7 +43,7 @@ form{
 form ol li {
 	background: #b9cf6a;
 	background: rgba(255,255,255,.3);
-	border-color: #e3ebc3;
+	border-color: #cfdde5;
 	border-color: rgba(255,255,255,.6);
 	border-style: solid;
 	border-width: .5%;
@@ -80,13 +91,22 @@ form label[for=mastercard] {
 }
 
 @media only screen and (max-width: 480px) {
+	body{
+		background: #5b675d;
+	}
 	.form {width: 40%;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+	body{
+		background: #cfdde5;
+	}
 	.form {width: 75%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	body{
+		background: #fffccc;
+	}
 	.form {width: 100%;
 	}
 }
