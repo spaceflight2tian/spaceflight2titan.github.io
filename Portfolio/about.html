@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>About</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!--logo text-->
+	<script>
+	$(document).ready(function(){
+		$(".logo-text-container").hover(
+			function()
+			{
+			$("#logo-text").animate({opacity:1}, 350);
+			},
+			function()
+			{
+			$("#logo-text").animate({opacity:0}, 500);
+			}
+		);
+	});
+    </script>
+
+</head>
+<body>
+
+	<header>
+		<nav class="main-menu">
+
+			<div class="logo-text-container" ontouchstart="this.classList.toggle('hover');">
+				<a href="index.html">
+            		<div class="logo"><img id="logo-img" src="img/logo.png" alt="logo"></div>
+				</a>
+				<div id="logo-text" >UX Designer</div>
+			</div>
+			<ul class="main-menu-item">
+				<li><a class="navbutton1" href="index.html">UX Design</a></li>
+				<li><a class="navbutton2" href="ux_research.html">UX Research</a></li>
+				<li><a class="navbutton3" href="about.html">About</a></li>
+				<li><a class="navbutton4" href="resume.html">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+    </script>
+		<section class = "bioText">
+			<div class="personalinfoText">
+        <h1><strong>Hi, my name is Jingyu!</strong></h1>
+        <br>
+        <p>I got my Bachelor of Architecture from Beijing University of Civil Engineering and Architecture and Master of Environmental Building Design from University of Pennsylvania.</p>
+        <p>After I completed my graduate study in Philadelphia and returned to my hometown. I joined Beijing Enerbos Energy Technologies LLC. Enerbos is committed to provide easy access to big data of buildings, make it easy to use and create values for clients. At a place where people create building operation intelligence and central building information hub, I have my initial understanding and interests of HCI. </p>
+      </div>
+		</section>
+    <section class="hobbygallery">
+        <div id = "hobbyimage" >
+<img  src = "img/1.jpeg" >
+        </div>
+        <div class="hobbythumbnails" >
+        <img class = "preview" alt = "image01"  src = "img/1.jpeg" onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)" >
+
+        <img class = "preview" alt = "image02" src = "img/2.jpeg" onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)" >
+
+        <img class = "preview" alt = "image03" src = "img/3.jpeg"  onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)">
+        <img class = "preview" alt = "image04" src = "img/4.jpeg"  onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)">
+        <img class = "preview" alt = "image05" src = "img/5.jpeg"  onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)">
+        <img class = "preview" alt = "image06" src = "img/6.jpeg"  onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)">
+        <img class = "preview" alt = "image07" src = "img/7.jpeg"  onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)">
+        <img class = "preview" alt = "image08" src = "img/8.jpeg"  onfocus="imgChange(this)" tabindex="0" onmouseover = "imgChange(this)" onblur="imgBack(this)" onmouseleave = "imgBack(this)">
+        </div>
+
+
+
+    </section>
+
+		<footer id="footer">
+
+			<div class="container">
+				<div class="columnforcopyright">© Li Jingyu 2018</div>
+									<div class="socialmedia">
+											<ul>
+													<li><a href="mailto:lijingyu@umich.edu"><img class="socail-media-icon" src="img/social_media_email.png" alt="email" ></a></li>
+													<li><a href="https://www.linkedin.com/in/li-jingyu/" target="_blank"><img class="socail-media-icon" src="img/social_media_linkedin.png" alt="Linkedin"></a></li>
+													<li><a href="https://www.instagram.com/spaceflight2titan/" target="_blank"><img class="socail-media-icon" src="img/social_media_instagram.png" alt="Instagram"></a></li>
+													<li><a href="https://github.com/spaceflight2titan/spaceflight2titan.github.io" target="_blank"><img class="socail-media-icon" src="img/social_media_github.png" alt="Instagram"></a></li>
+													<li><a href="https://www.pinterest.com/lijingyu2703/pins/" target="_blank"><img class="socail-media-icon" src="img/social_media_pinterest.png" alt="Instagram"></a></li>
+													<li><a href="https://twitter.com/Spaceflight2t" target="_blank"><img class="socail-media-icon" src="img/social_media_twitter.png" alt="Instagram"></a></li>
+											</ul>
+									</div>
+									<div class="clear"></div>
+							</div>
+			</footer>
+    </body>
+</html>

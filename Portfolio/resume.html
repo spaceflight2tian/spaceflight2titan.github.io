@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UX Design</title>
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/bootstrap.css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!--logo text-->
+	<script>
+	$(document).ready(function(){
+		$(".logo-text-container").hover(
+			function()
+			{
+			$("#logo-text").animate({opacity:1}, 350);
+			},
+			function()
+			{
+			$("#logo-text").animate({opacity:0}, 500);
+			}
+		);
+	});
+    </script>
+
+</head>
+<body>
+
+	<header>
+		<nav class="main-menu">
+
+			<div class="logo-text-container" ontouchstart="this.classList.toggle('hover');">
+				<a href="index.html">
+            		<div class="logo"><img id="logo-img" src="img/logo.png" alt="logo"></div>
+				</a>
+				<div id="logo-text" >UX Designer</div>
+			</div>
+			<ul class="main-menu-item">
+				<li><a class="navbutton1" href="index.html">UX Design</a></li>
+				<li><a class="navbutton2" href="ux_research.html">UX Research</a></li>
+				<li><a class="navbutton3" href="about.html">About</a></li>
+				<li><a class="navbutton4" href="resume.html">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+     <!--first banner-->
+    <section id="banner">
+       <div class="bannerContainer">
+
+            <!--div class="bannerH2"> I design for comfortable life ! </div-->
+       </div>
+    </section>
+     <!--Personal Info-->
+    <div class="vertical-center">
+    <div class="container">
+      <div class="personalinfoText">
+        <img class="resumeimg" src="img/resume.jpeg" alt="Resume">
+      </div>
+    </div>
+ </div>
+    <div class="contactme">
+        <form action="index.html" onsubmit="return checkForm();">
+            <fieldset>
+                <legend><h1>Your comments</h1></legend>
+                <label class="inputemail">Email Address:<input class="inputemail" type="text" name="emailAdress" id="emailAdress" onblur="checkForm()">
+                    </label>
+                <p class="errormsg" id="emailerrormsg" >Please enter your email address above</p>
+                <label class="inputcomment">Your comment:<input class="inputcomment" type="text" name="commentContent" id="commentContent" onblur="checkForm()"></label>
+                <p class="errormsg" id="commenterrormsg">Please enter your question here.</p>
+            </fieldset>
+        <input class="submit" type="submit" value="Submit it!" >
+        </form>
+    </div>
+    <footer id="footer">
+
+      <div class="container">
+  			<div class="columnforcopyright">© Li Jingyu 2018</div>
+                  <div class="socialmedia">
+                      <ul>
+                          <li><a href="mailto:lijingyu@umich.edu"><img class="socail-media-icon" src="img/social_media_email.png" alt="email" ></a></li>
+                          <li><a href="https://www.linkedin.com/in/li-jingyu/" target="_blank"><img class="socail-media-icon" src="img/social_media_linkedin.png" alt="Linkedin"></a></li>
+                          <li><a href="https://www.instagram.com/spaceflight2titan/" target="_blank"><img class="socail-media-icon" src="img/social_media_instagram.png" alt="Instagram"></a></li>
+  												<li><a href="https://github.com/spaceflight2titan/spaceflight2titan.github.io" target="_blank"><img class="socail-media-icon" src="img/social_media_github.png" alt="Instagram"></a></li>
+  												<li><a href="https://www.pinterest.com/lijingyu2703/pins/" target="_blank"><img class="socail-media-icon" src="img/social_media_pinterest.png" alt="Instagram"></a></li>
+  												<li><a href="https://twitter.com/Spaceflight2t" target="_blank"><img class="socail-media-icon" src="img/social_media_twitter.png" alt="Instagram"></a></li>
+                      </ul>
+                  </div>
+                  <div class="clear"></div>
+              </div>
+      </footer>
+
+</body>
+</html>
