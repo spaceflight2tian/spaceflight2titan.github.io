@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UX Design</title>
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!--logo text-->
+	<script>
+	$(document).ready(function(){
+		$(".logo-text-container").hover(
+			function()
+			{
+			$("#logo-text").animate({opacity:1}, 350);
+			},
+			function()
+			{
+			$("#logo-text").animate({opacity:0}, 500);
+			}
+		);
+	});
+  </script>
+</head>
+
+<body>
+
+	<header>
+		<nav class="main-menu">
+
+			<div class="logo-text-container" ontouchstart="this.classList.toggle('hover');">
+				<a href="index.html">
+            		<div class="logo"><img id="logo-img" src="img/logo.png" alt="logo"></div>
+				</a>
+				<div id="logo-text" >UX Designer</div>
+			</div>
+			<ul class="main-menu-item">
+				<li><a class="navbutton1" href="index.html">UX Design</a></li>
+				<li class="tab_active"><a class="navbutton2" href="ux_research.html">UX Research</a></li>
+				<li><a class="navbutton3" href="about.html">About</a></li>
+				<li><a class="navbutton4" href="resume.html">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+    <!--portfolio gallery-->
+<section class="main-container">
+	<div class="row">
+		<div class="col-lg-6 portfolio-item">
+			<div class="card h-100">
+				<a href="hutong_x.html"><img class="card-img-top" src="img/ux_research_stamps.jpg" alt="Stamps Website"></a>
+				<div class="card-body">
+					<h4 class="card-title">
+						<a href="stamps.html">Stamps Website</a>
+					</h4>
+					<p class="card-text">Over the summer of 2018, Stamps is planning a major redesign and overhaul of its public website. In preparation for this, a member n the communications office, our primary stakeholder, has asked us to conduct a user experience assessment of the current website.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 portfolio-item">
+			<div class="card h-100">
+				<a href="extended_portal.html"><img class="card-img-top" src="img/ux_research_wdi.jpg" alt="ExtendEd Portal"></a>
+				<div class="card-body">
+					<h4 class="card-title">
+							<a href="ada_gallery.html">ExtendEd Portal</a>
+					</h4>
+					<p class="card-text">The ExtendEd portal is the William Davidson Institute’s newly launched LMS which is designed as a second classroom for delivering subject content to students and for supporting discussions between teachers, students and administrators through the Internet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<footer id="footer">
+
+	<div class="container">
+		<div class="columnforcopyright">© Li Jingyu 2018</div>
+			<div class="socialmedia">
+				<a href="mailto:lijingyu@umich.edu"><img class="socail-media-icon" src="img/social_media_email.png" alt="email" ></a>
+				<a href="https://www.linkedin.com/in/li-jingyu/" target="_blank"><img class="socail-media-icon" src="img/social_media_linkedin.png" alt="Linkedin"></a>
+				<a href="https://www.instagram.com/spaceflight2titan/" target="_blank"><img class="socail-media-icon" src="img/social_media_instagram.png" alt="Instagram"></a>
+				<a href="https://github.com/spaceflight2titan/spaceflight2titan.github.io" target="_blank"><img class="socail-media-icon" src="img/social_media_github.png" alt="Instagram"></a>
+				<a href="https://www.pinterest.com/lijingyu2703/pins/" target="_blank"><img class="socail-media-icon" src="img/social_media_pinterest.png" alt="Instagram"></a>
+				<a href="https://twitter.com/Spaceflight2t" target="_blank"><img class="socail-media-icon" src="img/social_media_twitter.png" alt="Instagram"></a>
+			</div>
+		<div class="clear"></div>
+	</div>
+</footer>
+</body>
+</html>
