@@ -36,11 +36,41 @@
 	}
 	</style>
 
+	<!-- link to jquery -->
+	<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<script type="text/javascript">
 	// I used Two functions here.  Starter idea at:
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
+
+	$(document).ready(function(){ //pass function as an argument or function.onReady()
+		$('.preview').on('mouseover focus',showImage);
+		//multiple events space as common
+		// $('.preview').on('focue'), showImage);
+		$('.preview').on('mouseout blur',hideImage);
+	});
+
+// functions, a mix of javascript and jquery
+	function showImage() {
+
+		var src = this.src //$(this).attr("src")
+		var alt = this.alt //$(this).attr("alt")
+
+		$("#image").css("background-image", "url(" + src + ")" ); //"url('+ this.src +')"
+		$("#image").text(alt);
+			 // $('image').text（alt) //text(attr.alt)
+	};
+
+
+	function hideImage(){
+      $("#image").css("background-image", "");
+      $("#image").text("Hover over an image below.");
+  };
+
 	</script>
 </head>
+
 
 <body>
 	<h1>Challenge 5</h1>
@@ -52,17 +82,20 @@
 		<img class = "preview"
 			alt = "Styling with a Bandana"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+			tabindex='0'>
+			<!-- enable tab -->
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview"
 			alt = "With My Boy"
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";
+			tabindex ='1'>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
-			alt = "Young Puppy";>
+			alt = "Young Puppy";
+			tabindex = '2'>
 </body>
 </html>
