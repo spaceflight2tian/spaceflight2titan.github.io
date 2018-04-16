@@ -12,14 +12,34 @@
      </header>
 
      <section>
-       <div>
-         <img src="images/examPic.JPG" alt="Picture 1">
-         <img src="images/UMSI-logo.jpg" alt="Picture 2">
+       <div class="wrapper">
+         <img class= "image-on-page a" id="hide-show" src="images/examPic.JPG" alt="Picture 1">
+         <img class= "image-on-page b" src="images/UMSI-logo.jpg" alt="Picture 2">
 
        </div>
 
-       <button type="button" onclick="alert('Hello world!')">Hide Image</button>
-       <button type="button" onclick="alert('Hello world!')">Show Image</button>
+       <button type="button" onclick="myFunctionHide()">Hide Image</button>
+       <button type="button" onclick="myFunctionShow()">Show Image</button>
+
+<script>
+function myFunctionHide() {
+    var x = document.getElementById("hide-show");
+    if (x.style.display === "none") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+}
+function myFunctionShow() {
+    var x = document.getElementById("hide-show");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+
      </section>
 
   </body>
